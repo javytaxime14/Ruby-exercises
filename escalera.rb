@@ -1,11 +1,15 @@
-print "Ingresa un número: "
-num = gets.to_i
+n = ARGV[0].to_i
 
-num.times do |n|
-    puts "#" * (n+1)
+n.times do |i|
+    i.times do |j|
+        print '#'
+    end
+    print "\n"
 end
 
-#escalera invertida
-num.times do |n|
-    puts "#" * (num-n)
+n.times do |i|
+    (n - i).times do |j|
+        print '#'
+    end
+    print "\n"
 end
